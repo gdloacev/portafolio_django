@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+
+{% block pagetitle %}Home{% endblock %}
+{%block title%}My Home - Oscar Aceves{% endblock %}
+
+{% block content %} 
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, 
+scelerisque vel efficitur at, fermentum at nulla. Donec ipsum urna, lobortis a cursus ut, 
+maximus vel erat. Proin a lectus egestas, placerat enim at, iaculis metus. Integer nibh ante, 
+elementum eget felis vel, sagittis egestas justo. Curabitur diam orci, aliquam ut nunc nec, 
+faucibus sagittis ligula. Sed convallis ipsum sed libero pretium mattis. Aliquam scelerisque, 
+turpis tempor elementum dictum, urna purus rutrum massa, nec facilisis ipsum lorem vitae ante.</p>
+{% load static %}
+<img src="{% static 'core/img/logo.png' %}" alt="Logo">
+{% endblock %}
+

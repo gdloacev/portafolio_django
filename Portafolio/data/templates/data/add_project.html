@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+
+{% block pagetitle %}Add Project{% endblock %}
+{%block title%}Add Project To My Portfolio - Oscar Aceves{% endblock %}
+    
+{% block content %} 
+   <form enctype="multipart/form-data" action="" method="POST">
+        {% csrf_token %}
+        <table>
+        {{form.as_table}}
+        </table>
+        <input type="submit" value="Send">
+   </form>
+{% endblock %}

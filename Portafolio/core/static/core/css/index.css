@@ -1,0 +1,18 @@
+body{
+    background: #c3c3c3;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+.border-radius{
+    background: cadetblue;
+    border-radius: 1em;
+    display: inline-block;
+}
+
+#urlproject{
+    font-size: 32px;
+}

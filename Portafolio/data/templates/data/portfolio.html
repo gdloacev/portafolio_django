@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+
+{% block pagetitle %}Portfolio{% endblock %}
+{%block title%}My Portfolio - Oscar Aceves{% endblock %}
+    
+{% block content %} 
+    {% for project in projects %}
+        <br/>
+        <br/>
+        <img src="{{project.image.url}}" alt="">
+        <h2>{{project.title}}</h2>
+        <p>{{project.description}}</p>
+        <a href="{{project.link}}">More Info...</a>
+    {% endfor %}
+
+    <a id='urlproject' href="{% url 'add_project' %}">Add Project</a>
+{% endblock %}
